@@ -1,0 +1,69 @@
+.form {
+  width: 100%;
+  height: 50vh;
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    .innerContainer {
+      justify-content: space-between;
+      height: 40vh;
+      margin: 5px;
+      .fromDiv {
+        height: 20vh;
+        width: 90%;
+        justify-content: space-between;
+        .portalContent {
+          justify-content: space-between;
+          column-gap: 10px;
+        }
+      }
+      .packageContainer {
+        width: 90%;
+        .innerPackage {
+          justify-content: space-between;
+          column-gap: 10px;
+          .unitDiv {
+            width: 50%;
+            select {
+              height: 5vh;
+            }
+          }
+        }
+      }
+      .insuranceContainer {
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        .currency {
+          select {
+            height: 5vh;
+          }
+        }
+        .checkbox {
+          width: 50%;
+          justify-content: center;
+          align-items: start;
+          .check {
+            width: 5%;
+            height: 2vh;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .submitBtn {
+      position: absolute;
+      bottom: -35%;
+      width: 15%;
+      font-size: 12px;
+      height: 5vh;
+      font-size: 13px;
+      right: 1%;
+    }
+  }
+}

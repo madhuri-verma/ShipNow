@@ -1,0 +1,116 @@
+@import "../../../color.scss";
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(218, 216, 216, 0.288);
+  height: 93vh;
+  font-size: 14px;
+  .content {
+    width: 70%;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    .profile {
+      display: flex;
+      width: 40%;
+      height: 30vh;
+      flex-direction: column;
+      position: relative;
+      justify-content: start;
+      align-items: center;
+      input {
+        width: 80%;
+        color: black;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+      .message {
+        text-align: center;
+      }
+      input[type="file"] {
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        padding: 3%;
+        font-size: 15px;
+        background-color: green;
+        color: white;
+      }
+      h6 {
+        margin: 1%;
+        font-size: 13px;
+        cursor: pointer;
+        color: white;
+        background-image: $buttonBgColor;
+        padding: 3%;
+      }
+      .delete {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        p {
+          font-size: 12px;
+          margin: 1%;
+        }
+      }
+    }
+    .info {
+      width: 80%;
+      height: 80vh;
+      .password {
+        button {
+          width: max-content;
+          border: none;
+          padding: 2%;
+          font-size: 12px;
+        }
+      }
+      .detail {
+        width: 80%;
+        height: 20vh;
+        margin-top: 5%;
+        .formContent {
+          label {
+          }
+          input {
+            width: 95%;
+          }
+        }
+      }
+      .personalInfo {
+        width: 80%;
+        .input {
+          justify-content: space-between;
+          margin-top: 2%;
+          .formContent {
+            width: 50%;
+            label {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .submit {
+        width: 25%;
+        position: absolute;
+        bottom: 15%;
+        left: 12%;
+        text-align: end;
+        .btn {
+          font-size: 10px;
+          width: 30%;
+          align-self: end;
+        }
+      }
+    }
+  }
+}

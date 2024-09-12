@@ -1,0 +1,40 @@
+@import "../../color.scss";
+.container {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  .content {
+    width: 100%;
+    .header {
+      background-color: $colorWhite;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: end;
+      width: 100%;
+      pre {
+        align-self: center;
+        text-align: end;
+        margin: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;       
+        .userName{
+          width: min-content;
+          align-self: center;
+          color: $colorSuccess;
+          margin-left: 5px;
+        }
+        a {
+          color: rgb(0, 132, 255);
+        }
+        a:hover {
+          color: $blueColor;
+          text-decoration: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.container {
+  height: 30vh;
+  flex-wrap: wrap;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  text-align: center;
+  margin: 2%;
+  justify-content: space-between;
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 49%;
+    justify-content: space-between;
+    .innerContent {
+      label {
+        width: 100%;
+      }
+      .input {
+        width: 100%;
+      }
+    }
+  }
+  .contactContainer {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    label {
+      height: 3vh;
+    }
+    .contactContent {
+      width: 100%;
+      justify-content: space-between;
+      .inputContainer {
+        width: 32%;
+        .contactInput {
+          width: 100%;
+          padding: 2%;
+        }
+      }
+    }
+  }
+  .homeSelectionButton {
+    width: 100%;
+    height: 5vh;
+    margin-top: 2%;
+  }
+  h5 {
+    position: absolute;
+    bottom: 10vh;
+    width: 93%;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../color.scss";
+
+.container {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 3px rgba(206, 202, 202, 0.445);
+  flex-wrap: wrap;
+  .heading {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    cursor: pointer;
+  }
+  .menuContainer {
+    width: 20%;
+    height: 10vh;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .home.active {
+      color: #0865c2;
+      border-bottom: 1px solid #0865c2;
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: $blueColor;
+}
+a:hover {
+  color: #0865c2;
+}
+.active {
+  color: #0865c2;
+  border-bottom: 1px solid #0865c2;
+}
+.notActive {
+  text-decoration: none;
+}

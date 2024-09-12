@@ -1,0 +1,20 @@
+@import "../../color.scss";
+
+input[type="submit"]:hover {
+  color: rgb(224, 220, 220);
+  background-image: $buttonBgColorHover;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  height: 6vh;
+  color: white;
+  border: none;
+  width: 60%;
+  border-radius: 5px;
+  background-image: $buttonBgColor;
+}
+
+input[type="submit"]:disabled{
+  background-color: $buttonDisabled;
+}

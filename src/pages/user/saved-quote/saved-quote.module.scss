@@ -1,0 +1,22 @@
+@import "../../../color.scss";
+.container {
+  text-align: center;
+  h5 {
+    background-image: $buttonBgColor;
+    color: $colorWhite;
+    padding: 8px;
+  }
+  .tableContainer {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 83vh;
+    text-transform: capitalize;
+    .table {
+      .button {
+        font-size: 10px;
+        height: 3vh;
+        width: 100%;
+      }
+    }
+  }
+}

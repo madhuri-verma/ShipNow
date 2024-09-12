@@ -1,0 +1,99 @@
+@import "./color.scss";
+
+.d-flex-r {
+  display: flex;
+  flex-direction: row;
+}
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+button,
+a,
+input[type="submit"] {
+  cursor: pointer;
+}
+input {
+  width: 90%;
+  height: 4.4vh;
+  border: none;
+  outline: none;
+  padding: 0px 2%;
+  font-size: 13px;
+  box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.596);
+}
+select {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.596);
+}
+.input:hover {
+  outline: 1px solid $grey;
+}
+select:hover {
+  outline: 1px solid $grey;
+}
+label {
+  margin: 5px 0px;
+  text-transform: capitalize;
+}
+.form {
+  background-color: $colorWhite;
+}
+.errorContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: $colorError;
+  font-size: 10px;
+  margin: 1%;
+  width: 100%;
+  text-transform: capitalize;
+}
+.success {
+  color: $colorSuccess;
+  font-size: 14px;
+  margin-top: 2%;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+.toastContainer {
+  width: 20%;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  z-index: 9999;
+}
+.spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.reset-btn {
+  width: 100%;
+}
+.submit {
+  width: 100%;
+  border: 1px solid $colorError;
+}
+.required-asterisk {
+  color: $colorError;
+  margin: 1%;
+}
+button{
+  border: none;
+  background-color: $colorWhite;
+}
+.link{
+  color: $colorLink;
+}
+.link:hover{
+  border-bottom: 1px solid $colorLink;
+}
